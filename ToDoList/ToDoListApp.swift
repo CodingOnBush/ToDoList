@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ToDoListApp: App {
+    let taskViewModel = TaskViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TaskListView(viewModel: taskViewModel)
         }
     }
 }
